@@ -10,13 +10,15 @@ public class Sanglier extends Produit{
 			super();
 			this.poids = poids;
 			this.chasseur = chasseur;
+			this.nom = "sanglier";
+			this.unite = Unite.kg;
 		}
 
 
 
 		@Override
-		public void decrireProduit() {
-			System.out.println(nom + " de " + poids + unite + " chassé par " + chasseur);
+		public String decrireProduit() {
+			return (nom + " de " + poids + " " + unite + " chassé par " + chasseur.getNom());
 		}
 		
 }

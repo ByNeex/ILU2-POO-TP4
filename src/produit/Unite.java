@@ -1,5 +1,5 @@
 package produit;
 
 public enum Unite {
-	GRAMME, KILOGRAMME, LITRE, CENTILITRE, MILLILITRE, PIECE
+	g, kg, l, cl, ml, piece
 }

@@ -5,11 +5,13 @@ public class Poisson extends Produit{
 		public Poisson(String datePeche) {
 			super();
 			this.datePeche = datePeche;
+			this.nom = "poisson";
+			this.unite = Unite.piece;
 		}
 
 		@Override
-		public void decrireProduit() {
-			System.out.println(nom + " pêchés " + this.datePeche);
+		public String decrireProduit() {
+			return(nom + " pêché " + this.datePeche + ".");
 		}
 		
 }
